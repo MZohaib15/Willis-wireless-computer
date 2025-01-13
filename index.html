@@ -27,7 +27,7 @@
             width: 55%;
             height: 20vh;
             display: block;
-            margin: 20px auto 80px auto; /* Increased bottom margin for more space */
+            margin: 20px auto 40px auto; /* Reduced bottom margin */
         }
         .content {
             padding: 20px;
@@ -62,12 +62,25 @@
             height: 100%; /* Ensures the images fill the container's height */
             object-fit: cover; /* Ensures images maintain their aspect ratio while covering the entire container */
         }
-        a {
-            color: #ff0000;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+
+        /* Media Queries for Mobile Devices */
+        @media only screen and (max-width: 768px) {
+            header img {
+                width: 80%;  /* Adjust logo size for smaller screens */
+                height: auto;
+            }
+            .slideshow-container {
+                width: 100%; /* Slideshow container should take up 100% of the width */
+                margin: 10px auto; /* Reduced margin for slideshow */
+            }
+            .additional-image {
+                width: 90%; /* Increase the width of the additional image */
+                height: auto; /* Let the height adjust automatically */
+                margin: 10px auto; /* Reduced space between slideshow and additional image */
+            }
+            footer {
+                padding: 5px 0; /* Reduce footer padding for mobile */
+            }
         }
     </style>
     <script>
