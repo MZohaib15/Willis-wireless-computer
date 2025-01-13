@@ -27,11 +27,11 @@
             width: 55%;
             height: 20vh;
             display: block;
-            margin: 20px auto 80px auto; /* Default spacing for larger screens */
+            margin: 20px auto 30px auto; /* Adjusted margin for consistent space */
         }
         .content {
             padding: 20px;
-            padding-bottom: 60px; /* Add padding to ensure content is above footer */
+            padding-bottom: 60px; /* Ensure content stays above footer */
         }
         .content h2 {
             color: #ff0000;
@@ -48,8 +48,8 @@
         .slideshow-container {
             width: 55%;
             position: relative;
-            margin: 20px auto;
-            border: 3px solid #fff; /* Changed border color to white */
+            margin: 10px auto; /* Consistent margin for slideshow */
+            border: 3px solid #fff; /* White border */
             overflow: hidden; /* Ensure any overflowed image parts are hidden */
         }
         .slides {
@@ -76,33 +76,55 @@
             .additional-image {
                 width: 90%; /* Increase the width of the additional image */
                 height: auto; /* Let the height adjust automatically */
-                margin: 10px auto 80px auto; /* More space before footer */
+                margin: 20px auto 30px auto; /* Consistent margin */
             }
             footer {
-                padding: 5px 0; /* Reduce footer padding for mobile */
+                padding: 5px 0; /* Reduced footer padding for mobile */
             }
             .content {
-                padding-bottom: 100px; /* Add more padding to content to prevent footer overlap */
+                padding-bottom: 100px; /* More padding to prevent footer overlap */
             }
         }
 
         /* Media Queries for Laptop & Larger Devices */
         @media only screen and (min-width: 769px) {
             .slideshow-container {
-                width: 60%; /* Keep slideshow at 60% for larger screens */
-                margin: 20px auto; /* Keep consistent margin for slideshow */
+                width: 60%; /* Slideshow at 60% for larger screens */
+                margin: 10px auto; /* Consistent margin */
             }
             .additional-image {
-                width: 60%; /* Increase the width of the additional image for larger devices */
-                height: auto; /* Let the height adjust automatically */
-                margin: 30px auto 100px auto; /* Increase space before footer for laptops/desktops */
+                width: 60%; /* Increase width for additional image on larger screens */
+                height: auto;
+                margin: 20px auto 30px auto; /* Consistent margin */
             }
             footer {
-                padding: 10px 0; /* Keep footer padding larger for desktop and laptop */
+                padding: 10px 0; /* Larger footer padding */
             }
             .content {
-                padding-bottom: 120px; /* Add more padding for content to ensure footer does not overlap */
+                padding-bottom: 120px; /* Prevent footer overlap */
             }
+        }
+
+        /* New Section Styling */
+        .why-choose-us {
+            padding: 40px 20px;
+            background-color: #000; /* Black background to match the site */
+            color: #fff;
+            margin: 20px 0; /* Consistent margin between sections */
+        }
+        .why-choose-us h3 {
+            color: #ff0000; /* Red heading */
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .why-choose-us p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
     <script>
@@ -131,7 +153,16 @@
             <img src="image3.jpg" alt="Slide 3" class="slides">
         </div>
     </div>
+
+    <!-- New Why Choose Us Section -->
+    <div class="why-choose-us">
+        <h3>Why Choose Us</h3>
+        <p>At Willis Wireless & Computer Repairs, we pride ourselves on providing top-notch services to meet all your wireless and computer repair needs. Our expert technicians are highly trained to diagnose and resolve issues quickly and effectively, ensuring your devices are back to optimal performance in no time.</p>
+        <p>With years of experience and a commitment to customer satisfaction, we stand out as the trusted choice for residents in Willis, TX, and beyond. Whether it's repairing your computer, fixing wireless connectivity problems, or offering personalized solutions, we are dedicated to excellence.</p>
+    </div>
+
     <img src="additional_image.jpg" alt="Additional Image" class="additional-image">
+
     <footer>
         <p>&copy; 2025 Willis Wireless & Computer Repairs</p>
     </footer>
