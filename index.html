@@ -27,7 +27,7 @@
             width: 55%;
             height: 20vh;
             display: block;
-            margin: 20px auto 40px auto; /* Reduced bottom margin */
+            margin: 20px auto 80px auto; /* Default spacing for larger screens */
         }
         .content {
             padding: 20px;
@@ -76,10 +76,32 @@
             .additional-image {
                 width: 90%; /* Increase the width of the additional image */
                 height: auto; /* Let the height adjust automatically */
-                margin: 10px auto; /* Reduced space between slideshow and additional image */
+                margin: 10px auto 80px auto; /* More space before footer */
             }
             footer {
                 padding: 5px 0; /* Reduce footer padding for mobile */
+            }
+            .content {
+                padding-bottom: 100px; /* Add more padding to content to prevent footer overlap */
+            }
+        }
+
+        /* Media Queries for Laptop & Larger Devices */
+        @media only screen and (min-width: 769px) {
+            .slideshow-container {
+                width: 60%; /* Keep slideshow at 60% for larger screens */
+                margin: 20px auto; /* Keep consistent margin for slideshow */
+            }
+            .additional-image {
+                width: 60%; /* Increase the width of the additional image for larger devices */
+                height: auto; /* Let the height adjust automatically */
+                margin: 30px auto 100px auto; /* Increase space before footer for laptops/desktops */
+            }
+            footer {
+                padding: 10px 0; /* Keep footer padding larger for desktop and laptop */
+            }
+            .content {
+                padding-bottom: 120px; /* Add more padding for content to ensure footer does not overlap */
             }
         }
     </style>
